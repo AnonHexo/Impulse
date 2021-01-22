@@ -28,8 +28,6 @@ def CriticalError(message, error):
     {Fore.MAGENTA}MACHINE: {platform.machine()}
     {Fore.MAGENTA}NODE: {platform.node()}
     {Fore.MAGENTA}TIME: {ctime()}
-    {Fore.RED}:=== Report:
-    {Fore.MAGENTA}Please report it here: https://github.com/LimerBoy/Impulse/issues/new
     {Fore.RESET}
     """)
     sys.exit(5)
