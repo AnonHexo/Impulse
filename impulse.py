@@ -1,10 +1,9 @@
-# Created by LimerBoy
 # Import modules
 import os
 import sys
 import argparse
 
-# Go to current dir
+# Go to current directory
 os.chdir(os.path.dirname(os.path.realpath(__file__)))
 
 try:
@@ -17,13 +16,13 @@ except ImportError as err:
     CriticalError("Failed import some modules", err)
     sys.exit(1)
 
-# Parse args
+# Parse arguments
 parser = argparse.ArgumentParser(description="DoS Toolkit")
 parser.add_argument(
     "--target",
     type=str,
     metavar="<IP:PORT, URL, PHONE>",
-    help="Target ip:port, url or phone",
+    help="Target IP:PORT, url or phone",
 )
 parser.add_argument(
     "--method",
@@ -38,7 +37,7 @@ parser.add_argument(
     "--threads", type=int, default=3, metavar="<threads>", help="threads count (1-200)"
 )
 
-# Get args
+# Get arguments
 args = parser.parse_args()
 threads = args.threads
 time = args.time
