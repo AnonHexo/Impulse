@@ -1,3 +1,4 @@
+# Created by LimerBoy, full credit to him!
 # Import modules
 import os
 import sys
